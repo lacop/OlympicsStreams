@@ -70,12 +70,12 @@ namespace OlympicStreams
                 }
                 else
                 {
-                    Console.WriteLine("{0:00}:{1:00}\tNOW \t{2}", (sorted[i].Start - DateTime.Now).Hours, (sorted[i].End - DateTime.Now).Minutes, sorted[i]);
+                    Console.WriteLine("{0:00}:{1:00}\tmext\t{2}", (sorted[i].Start - DateTime.Now).Hours, (sorted[i].End - DateTime.Now).Minutes, sorted[i]);
                 }
 
                 if (i < sorted.Length-1)
                 {
-                    Console.WriteLine("{0:00}:{1:00}\tNOW \t{2}", (sorted[i + 1].Start - DateTime.Now).Hours, (sorted[i + 1].End - DateTime.Now).Minutes, sorted[i + 1]);
+                    Console.WriteLine("{0:00}:{1:00}\tnext\t{2}", (sorted[i + 1].Start - DateTime.Now).Hours, (sorted[i + 1].End - DateTime.Now).Minutes, sorted[i + 1]);
                 }
 
                 Console.WriteLine();
